@@ -13,7 +13,7 @@ mysql -h localhost -u root -pRoboShop@1 catalogue < db/master-data.sql
 useradd -r -s /bin/false appuser
 cd /app
 go mod tidy
-CGO_ENABLED=0 go build -o /app/catalogue .
+CGO_ENABLED=0 go build -o /app/catalogue
 chown -R appuser:appuser /app
 chmod o-rwx /app -R
 systemctl daemon-reload
