@@ -5,12 +5,13 @@ node --version
 npm --version
 
 rm -rf /app
+rm -rf /tmp/user.zip
+
 useradd -r -s /bin/false appuser
 mkdir -p /app
 
 curl -L -o /tmp/user.zip https://raw.githubusercontent.com/raghudevopsb89/roboshop-microservices/main/artifacts/user.zip
 cd /app
-rm -rf /tmp/user.zip
 
 unzip /tmp/user.zip
 npm install --production
