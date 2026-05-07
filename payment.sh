@@ -3,6 +3,7 @@ dnf install -y python3 python3-pip
 python3 --version
 
 rm -rf /app
+rm -rf /tmp/payment.zip
 useradd -r -s /bin/false appuser
 mkdir -p /app
 
@@ -16,7 +17,7 @@ chmod o-rwx /app -R
 
 systemctl daemon-reload
 systemctl enable payment
-systemctl start payment
+systemctl restart payment
 
 systemctl status payment
 journalctl -u payment -f
