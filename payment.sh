@@ -1,6 +1,6 @@
 cp payment.service /etc/systemd/system/payment.service
 dnf install -y python3 python3-pip
-python3 --version
+
 
 rm -rf /app
 rm -rf /tmp/payment.zip
