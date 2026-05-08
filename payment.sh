@@ -7,7 +7,7 @@ rm -rf /tmp/payment.zip
 useradd -r -s /bin/false appuser
 mkdir -p /app
 
-rm -rf /tmp/payment.zip
+
 curl -L -o /tmp/payment.zip https://raw.githubusercontent.com/raghudevopsb89/roboshop-microservices/main/artifacts/payment.zip
 cd /app
 unzip /tmp/payment.zip
