@@ -15,7 +15,7 @@ curl -L -o /tmp/frontend.zip https://raw.githubusercontent.com/raghudevopsb89/ro
 rm -rf  /tmp/frontend &>>/tmp/roboshop.log
 mkdir -p /tmp/frontend && cd /tmp/frontend &>>/tmp/roboshop.log
 unzip /tmp/frontend.zip &>>/tmp/roboshop.log
-echo -e "\e[31m >>>>>>>>>>>>>>>>>> this is for install npm <<<<<<<<<<<<<<< \e[0m | tee -a /tmp/roboshop.log
+echo -e "\e[31m >>>>>>>>>>>>>>>>>> this is for install npm <<<<<<<<<<<<<<< \e[0m" | tee -a /tmp/roboshop.log
 npm install &>>/tmp/roboshop.log
 echo -e "\e[31m >>>>>>>>>>>> this is for install npm build <<<<<<<<<<<<<< \e[0m" | tee -a /tmp/roboshop.log
 npm run build &>>/tmp/roboshop.log
