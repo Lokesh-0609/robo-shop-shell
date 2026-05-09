@@ -1,5 +1,5 @@
 # install nginx
-Log_file = ${Log_file}
+Log_file = /tmp/roboshop.log
 hs="\e[33m >>>>>>>>>"
 he="<<<<<<<<<<<< \e[0m"
 component_name=frontend
