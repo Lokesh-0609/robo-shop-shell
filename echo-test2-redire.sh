@@ -1,4 +1,5 @@
 # install nginx
+echo log file out: /tmp/roboshop.log
 echo -e "\\e[33m >>>>> This is for cp nginx file <<<<<<<<< \\e[0m"
 cp nginx.conf /etc/nginx/nginx.conf &>>/tmp/roboshop.log
 dnf install -y nginx &>>/tmp/roboshop.log
