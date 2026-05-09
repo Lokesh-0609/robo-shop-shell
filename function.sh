@@ -4,7 +4,7 @@ sample() {
 }
 a=10
 sample
-common.sh
+source common.sh
 
 sample1
 sample2
