@@ -1,5 +1,5 @@
 # install nginx
-echo -e \\e[33m >>>>> This is for cp nginx file <<<<<<<<< \\e[0m
+echo -e "\\e[33m >>>>> This is for cp nginx file <<<<<<<<< \\e[0m"
 cp nginx.conf /etc/nginx/nginx.conf
 dnf install -y nginx
 ##Copy file from /etc/nginx/nginx.conf
