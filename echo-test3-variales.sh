@@ -1,9 +1,9 @@
 # install nginx
-Log_file = /tmp/roboshop.log
+Log_file =/tmp/roboshop.log
 hs="\e[33m >>>>>>>>>"
 he="<<<<<<<<<<<< \e[0m"
 component_name=frontend
-echo log file output:${Log_file}
+echo log file output: ${Log_file}
 echo -e ${hs} This is for cp nginx file ${he} | tee -a ${Log_file}
 cp nginx.conf /etc/nginx/nginx.conf &>>${Log_file}
 echo $?
